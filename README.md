@@ -1,1 +1,2 @@
 # Artificial-Squad
+Coretta, Micky
