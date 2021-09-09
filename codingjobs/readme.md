@@ -1,7 +1,7 @@
 <h1><strong>Artificial Squad</strong></h1> 
 from Testoper<br>
 
-Project name: Jibe (name holder)
+<p>Project name: Jibe (name holder)</p>
 
 Django with python, bulma and vue
 
