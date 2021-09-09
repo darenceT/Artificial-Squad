@@ -1,2 +1,4 @@
 # Artificial-Squad
-Coretta, Micky
+Micky, Coretta, Darence, Muqueeth
+
+Click on codingjobs to site progress
