@@ -1,7 +1,8 @@
-<h1><strong>Artificial Squad</strong></h1> 
-from Testoper<br>
+#Artificial Squad
 
-<p>Project name: Jibe (name holder)</p>
+from Testoper
+
+Project name: Jibe (name holder)
 
 Django with python, bulma and vue
 
