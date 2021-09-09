@@ -1,10 +1,9 @@
 <h1><strong>Artificial Squad</strong></h1> 
-from Testoper
+from Testoper<br>
 
 Project name: Jibe (name holder)
 
 Django with python, bulma and vue
-
 
 <strong><u>Progress:</u></strong>
 <pre>
