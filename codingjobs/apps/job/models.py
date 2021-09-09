@@ -13,3 +13,13 @@ class Job(models.Model):
 
 	def __str__(self):
 		return self.title
+
+class Application(models.Model):
+	job = models.ForeignKey(Job, related_name='applications', on_delete=models.CASCADE)
+	work_history = models.TextField()
+	education = models.TextField()
+	projects = models.TextField()
+
+	created_by = models.ForeignKey(User, related_name='applications', on_delete=models.CASCADE)
+	created_at = models.DateTimeField(auto_now_add=True)
+
