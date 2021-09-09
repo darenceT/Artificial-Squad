@@ -2,7 +2,7 @@
 
 from Testoper
 
-Project name: Jibe (name holder)
+Project name: <strong>Jibe</strong> (name holder)
 
 Django with python, bulma and vue
 
