@@ -9,7 +9,7 @@
 		<!-- Employer/Recruiter view -->
 			<h2 class="subtitle"><strong>Current applicants:</strong></h2>
 			<p>No applicants yet.</p><br>
-			<a href="http://www.google.com">Browse job seekers here</a><br></br>
+			<a href="http://www.google.com">Browse job seekers here</a><br/><br/>
 
 			<h2 class="subtitle"><strong>Your job postings:</strong></h2>
 			{% for job in request.user.jobs.all %}
@@ -24,6 +24,9 @@
 
 		<!-- Jobseeker view -->
 
+			<p><a href="">Profile</a></p>
+			<p><a href="">Resume</a></p><br/>
+
 			<h2 class="subtitle">Your current applications:</h2>
 
 			{% for application in request.user.applications.all %}
@@ -32,7 +35,10 @@
 				</div>
 			{% empty %}
 				<p>Start applying for jobs today. Let Jibe find your dream job!</p>
-			{% endfor %}
+			{% endfor %}<br>
+
+			<!-- AI jobs -->
+			<a href="{% url 'ai_jobs' %}"><strong>Your AI-powered job reccomendations</strong></a>	
 		{% endif %}
 	</div>
 {% endblock %}
