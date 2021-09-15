@@ -19,7 +19,7 @@
 			{% empty %}
 				<p>You don't have any jobs, post one today!</p>
 			{% endfor %}<br>
-			<a href="http://www.google.com">Post new jobs</a>
+			<a href="{% url 'add_job' %}">Post new jobs</a>
 		{% else %}	
 
 		<!-- Jobseeker view -->
