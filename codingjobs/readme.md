@@ -2,13 +2,13 @@
 
 from Testoper
 
-Project name: <strong>Jibe</strong> (name holder)
+Project name: <strong>Jibe</strong>
 
-Django with python, bulma and vue
+Django with python, & bulma 
 
 <strong><u>Progress:</u></strong>
 <pre>
-8/31/21 Upload initial: Frontpage & sign up page -Darence
+9/14/21 Added designs (readme and screenshots), added to tasklist (projects)
 9/9/21  footer and its pages: working on sticky for footer -Darence
-
+8/31/21 Upload initial: Frontpage & sign up page -Darence
 </pre>
