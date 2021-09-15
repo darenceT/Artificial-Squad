@@ -4,8 +4,9 @@
 
 updated 9/14/21
 
-Contents of each page:
+<strong>Contents of each page:</strong>
 
+<pre>
 Every page ("base"):
 	- header: 
 		- left corner Jibe logo (link to frontpage)
@@ -58,3 +59,4 @@ resources:
 
 careers: 
 	- will have form to contact artificial squad
+</pre>
