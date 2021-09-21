@@ -21,3 +21,8 @@ def ai_jobs(request):
     jobs = Job.objects.all()[0:3]
 
     return render(request, 'userprofile/ai_jobs.html', {'jobs': jobs})
+
+@login_required
+def resume(request):
+
+    return render(request, 'userprofile/resume.html')

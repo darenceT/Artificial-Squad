@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <h1 class="column is-offset-3">Resume</h2><br> <!--fixme better code for h1 + center?-->
+        <p>upload</p>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="resume">
+        <button type="submit">Upload</button>
+    </form>
+{% endblock %}
