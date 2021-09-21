@@ -1,4 +1,6 @@
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 from .views import dashboard, view_application, ai_jobs, resume
 
@@ -8,3 +10,6 @@ urlpatterns = [
 	path('ai_jobs/', ai_jobs, name='ai_jobs'),
 	path('resume/', resume, name='resume'),
 ]
+
+if settings.DEBUG:
+	urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

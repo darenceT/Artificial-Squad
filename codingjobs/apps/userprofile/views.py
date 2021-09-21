@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
+from django.core.files.storage import FileSystemStorage
 
 from apps.job.models import Application, Job
 
@@ -24,5 +25,12 @@ def ai_jobs(request):
 
 @login_required
 def resume(request):
-
-    return render(request, 'userprofile/resume.html')
+    context = {}
+    if request.method == 'POST':
+        uploaded_file = request.FILES['resume']
+        fs = FileSystemStorage()
+        name = fs.save(uploaded_file.name, uploaded_file)
+        url = fs.url(name)                  # FIXME bypassed on resume.html
+        context['url'] = fs.url(name)       # FIXME bypassed on resume.html
+        context['name'] = name
+    return render(request, 'userprofile/resume.html', context)
