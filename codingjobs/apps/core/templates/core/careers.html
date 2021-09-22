@@ -5,6 +5,31 @@
 {% block content %}
 	<div class="column is-offset-3">
 		<h1 class="title">Careers</h1><hr>
-		<p>We are also looking for new talent to join the team</p>
+		<p>We are also looking for new talent to join our team!</p><br>
+
+		<div class="container">
+			<form action="" method="POST" class="contact-form">
+				{% csrf_token %}
+				<div class="form-control">
+					<div class="tag">Full Name</div><br>
+					<input type="text" name="full-name">
+				</div>
+				<div class="form-control">
+					<div class="tag">Email</div><br>
+					<input type="text" name="email">
+				</div>
+				<div class="form-control">
+					<div class="tag">Subject</div><br>
+					<input type="text" name="subject">
+				</div>
+				<div class="form-control">
+					<div class="tag">Message</div><br>
+					<textarea name="message" cols="30" rows="10"></textarea>
+				</div>
+				<div class="form-control">
+					<input type="Submit" class="btn submit-btn" value="Send Message">
+				</div>
+			</form>
+		</div>
 	</div>
 {% endblock %}

@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +9,7 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	<style>
 		.container
 		{
@@ -18,9 +21,9 @@
 	</style>
 	<!-- End Styles -->
 </head>
-<body>		<!-- change color: class="has-background-info-lighter" -->
+<body>	
 	<!-- Navbar -->
-	<nav class="navbar is-link">
+	<nav class="navbar is-link">	<!-- header color -->
 		<div class="navbar-brand">
 			<a href="{% url 'frontpage' %}" class="navbar-item"><strong>Jibe</strong></a>
 		</div>
@@ -54,15 +57,14 @@
 		</section>
 	</div>
 	<!-- End Main Content -->
-
+</body>
  	<!-- Footer  -->
  	<div class="footer">
- 		<div class="content has-text-centered">
- 			<h2>
- 				<a href="{% url 'about' %}">about us</a>&nbsp;|&nbsp;<a href="{% url 'resources' %}">resources</a>&nbsp;|&nbsp;<a href="{% url 'careers' %}">careers</a>
- 			</h2>
- 			<p><strong>Jibe</strong> by Artificial Squad (Testoper)</p>
- 		</div>
- 	</div>
-</body>
+		<div class="content has-text-centered">
+			<h2>
+				<a href="{% url 'about' %}">about us</a>&nbsp;|&nbsp;<a href="{% url 'resources' %}">resources</a>&nbsp;|&nbsp;<a href="{% url 'careers' %}">careers</a>
+			</h2>
+			<p><strong>Jibe</strong> by Artificial Squad (Testoper)</p>
+		</div>
+	</div>
 </html>

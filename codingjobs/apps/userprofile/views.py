@@ -33,4 +33,5 @@ def resume(request):
         url = fs.url(name)                  # FIXME bypassed on resume.html
         context['url'] = fs.url(name)       # FIXME bypassed on resume.html
         context['name'] = name
+        # context['upload_time'] =          FIXME insert timestamp
     return render(request, 'userprofile/resume.html', context)
