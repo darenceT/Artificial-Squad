@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+	<h1 class="title">Create your profile {{ user }}</h1>
+
+	<form method="post" action=".">
+		{% csrf_token %}
+
+		{% if form.errors %}
+			{% for error in form.errors %}
+				<div class="notification is-danger">
+					{{ error }}
+				</div>
+			{% endfor %}
+		{% endif %}
+        
+        <div class="field">
+			<label>Full Name</label>
+
+			<div class="control">
+				<input class="input" type="text" name="full_name" id="id_full_name">
+			</div>
+		</div>
+
+		<div class="field">
+			<label>Relevant Background</label>
+            <p>Highlight key strengths in your experience, training, and education</p>
+
+			<div class="control">
+				<textarea class="textarea" name="relevant_background" id="id_relevant_background"></textarea>
+			</div>
+		</div>
+
+
+		<div class="field">
+			<label>Values</label>
+            <p>What is important to you in your dream job? (e.g. remote work, location, size of company, culture, diversity)</p>
+			<div class="control">
+				<textarea class="textarea" name="values" id="id_values"></textarea>
+			</div>
+		</div>
+
+		<div class="field">
+			<label>Career Goals</label>
+            <p>Where do you see yourself in 5 or 10 years? What would make you stay with a company for the long haul?</p>
+			<div class="control">
+				<textarea class="textarea" name="career_goals" id="id_career_goals"></textarea>
+			</div>
+		</div>
+
+		<div class="field">
+			<div class="control">
+				<button class="button is-success">Submit</button>
+			</div>
+		</div>
+	</form>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+<!-- similar to "view application" but will have edit feature -->
+
+{% block content %}
+    <div class="column is-offset-3">    
+        <h1 class="title">Your Profile</h1><br> 
+        <p> Our Ai machine will use your profile along with your resume to find the jobs that you want.</p>
+        
+            {{ profile.full_name }}
+            {% for profile in request.user.profiles.all %}
+				<div class="profile">
+					<a href="{% url 'profile' profile.id %}">{{ application.job.title }}</a>
+				</div>
+			{% empty %}
+				<p>EMPTY: Start applying for jobs today. Let Jibe find your dream job!</p>
+			{% endfor %}
+        
+    </div>
+{% endblock %}
+
+<!-- 
+<div class="column is-offset-3">
+    <h2 class="title">{{ application.job.title }}</h2>
+    <h1 class="subtitle">View Application</h1>
+    <small>Submitted on {{ application.created_at }}</small><hr>
+    <p><strong>Work history: </strong><br>{{ application.work_history }}</p>
+    <p><strong>Education: </strong><br>{{ application.education }}</p>
+    <p><strong>Projects: </strong><br>{{ application.projects }}</p>
+</div> -->

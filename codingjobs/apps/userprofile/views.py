@@ -1,8 +1,10 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.core.files.storage import FileSystemStorage
 
 from apps.job.models import Application, Job
+from .models import Profile
+from .forms import Profile_form
 
 @login_required
 def dashboard(request):
@@ -14,16 +16,54 @@ def view_application(request, application_id):
         application = get_object_or_404(Application, pk=application_id, job__created_by=request.user)
     else:
         application = get_object_or_404(Application, pk=application_id, created_by=request.user)
-    
     return render(request, 'userprofile/view_application.html', {'application': application})
 
-@login_required
+@login_required #FIXME test, is this necessary?
 def ai_jobs(request):
     jobs = Job.objects.all()[0:3]
-
     return render(request, 'userprofile/ai_jobs.html', {'jobs': jobs})
 
-@login_required
+# need @login_required here?
+def profile(request):
+    profile = get_object_or_404(Profile)
+    return render(request, 'userprofile/profile.html', {'profile': profile})
+
+def profile_create_TEST(request):
+    profile = Profile.objects.get(pk=profile_id)
+    
+    if request.method == 'POST':
+        form = Profile_form(request.POST)
+        
+        if form.is_valid():
+            application = form.save(commit=False)
+            application.profile = profile
+            application.created_by = request.user
+            application.save()
+            
+            return redirect('dashboard')
+        
+    else:
+        form = Profile_form()
+
+    return render(request, 'userprofile/profile_create.html', {'form':form, 'profile_create': profile_create})
+
+
+def profile_create(request):
+	if request.method == 'POST':
+		form = Profile_form(request.POST)
+
+		if form.is_valid():
+			profile = form.save(commit=False)
+			profile.created_by = request.user
+			profile.save()
+
+			return redirect('dashboard')
+	else:
+		form = Profile_form()
+
+	return render(request, 'userprofile/profile_create.html', {'form': form})
+
+@login_required #FIXME test, is this necessary?
 def resume(request):
     context = {}
     if request.method == 'POST':
