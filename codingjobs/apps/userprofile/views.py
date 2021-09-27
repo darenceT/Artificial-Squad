@@ -28,26 +28,6 @@ def profile(request):
     profile = get_object_or_404(Profile)
     return render(request, 'userprofile/profile.html', {'profile': profile})
 
-def profile_create_TEST(request):
-    profile = Profile.objects.get(pk=profile_id)
-    
-    if request.method == 'POST':
-        form = Profile_form(request.POST)
-        
-        if form.is_valid():
-            application = form.save(commit=False)
-            application.profile = profile
-            application.created_by = request.user
-            application.save()
-            
-            return redirect('dashboard')
-        
-    else:
-        form = Profile_form()
-
-    return render(request, 'userprofile/profile_create.html', {'form':form, 'profile_create': profile_create})
-
-
 def profile_create(request):
 	if request.method == 'POST':
 		form = Profile_form(request.POST)
