@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.contrib.auth import views
 
 from apps.core.views import frontpage, signup, about, resources, careers
+from apps.ai.views import ai_jobs
 
 urlpatterns = [
     path('', frontpage, name='frontpage'),
@@ -27,6 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('dashboard/', include('apps.userprofile.urls')),
     path('jobs/', include('apps.job.urls')),
+    path('ai_jobs/', ai_jobs, name='ai_jobs'),
     path('about/', about, name='about'),
     path('resources/', resources, name='resources'),
     path('careers/', careers, name='careers'),

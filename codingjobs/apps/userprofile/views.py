@@ -19,9 +19,9 @@ def view_application(request, application_id):
     return render(request, 'userprofile/view_application.html', {'application': application})
 
 @login_required #FIXME test, is this necessary?
-def ai_jobs(request):
+def ai_job(request):
     jobs = Job.objects.all()[0:3]
-    return render(request, 'userprofile/ai_jobs.html', {'jobs': jobs})
+    return render(request, 'userprofile/ai_job.html', {'jobs': jobs})
 
 # need @login_required here?
 def profile(request):
