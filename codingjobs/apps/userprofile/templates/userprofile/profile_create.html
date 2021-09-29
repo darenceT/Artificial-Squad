@@ -12,10 +12,10 @@
 					{{ error }}
 				</div>
 			{% endfor %}
-		{% endif %}
+		{% endif %}<br>
         
         <div class="field">
-			<label>Full Name</label>
+			<label><strong>Full Name</strong></label>
 
 			<div class="control">
 				<input class="input" type="text" name="full_name" id="id_full_name">
@@ -23,17 +23,41 @@
 		</div>
 
 		<div class="field">
-			<label>Relevant Background</label>
+			<label><strong>Relevant Background</strong></label>
             <p>Highlight key strengths in your experience, training, and education</p>
 
 			<div class="control">
 				<textarea class="textarea" name="relevant_background" id="id_relevant_background"></textarea>
 			</div>
 		</div>
+		<p><strong>Skills:</strong></p>
+		<label class="container">Product Management
+			<input type="checkbox" checked="checked">
+			<span class="checkmark" name="product_management" id="id_product_management"></span>
+		  </label>
+		  
+		  <label class="container">Web Developement
+			<input type="checkbox">
+			<span class="checkmark" name="web_development" id="id_web_development"></span>
+		  </label>
+		  
+		  <label class="container">User Experience
+			<input type="checkbox">
+			<span class="checkmark" name="user_experience" id="id_user_experience"></span>
+		  </label>
+		  
+		  <label class="container">Marketing
+			<input type="checkbox">
+			<span class="checkmark" name="marketing" id="id_marketing"></span>
+		  </label>
 
+		  <label class="container">Finance
+			<input type="checkbox">
+			<span class="checkmark" name="finance" id="id_finance"></span>
+		  </label><br><br>
 
 		<div class="field">
-			<label>Values</label>
+			<label><strong>Values</strong></label>
             <p>What is important to you in your dream job? (e.g. remote work, location, size of company, culture, diversity)</p>
 			<div class="control">
 				<textarea class="textarea" name="values" id="id_values"></textarea>
@@ -41,7 +65,7 @@
 		</div>
 
 		<div class="field">
-			<label>Career Goals</label>
+			<label><strong>Career Goals</strong></label>
             <p>Where do you see yourself in 5 or 10 years? What would make you stay with a company for the long haul?</p>
 			<div class="control">
 				<textarea class="textarea" name="career_goals" id="id_career_goals"></textarea>

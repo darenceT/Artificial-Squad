@@ -8,6 +8,7 @@ Django with python, & bulma
 
 <strong><u>Progress:</u></strong>
 <pre>
+9/28/21 skills checkbox -Darence
 9/27/21 view profile -Darence
 9/25/21 profile form added, working on link -Darence
 9/21/21 upload resumes, careers contact, css initiated -Darence
