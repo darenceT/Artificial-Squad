@@ -6,8 +6,7 @@ Project name: Jibe
 
 Team: Micky, Coretta, Darence, Muqueeth
 
-
-Frontend: html, css, bulma, Figma
+Frontend: html, css, bulma, figma
 
 Backend: python & django 
 
