@@ -2,14 +2,14 @@
 
 from Testoper
 
-Project name: <strong>Jibe</strong>
+Project name: Jibe
 
 Team: Micky, Corretta, Darence, Muqueeth
 
 Frontend: html, css, bulma, Figma
 Backend: python & django 
 
-<strong><u>Progress:</u></strong>
+<u>Progress:</u>
 <pre>
 10/5/21 meeting: front end designs, review pitch deck (Teams repo), logo ideas
 10/5/21 frontend designs uploaded by Muqueeth
