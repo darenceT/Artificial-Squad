@@ -8,6 +8,8 @@ Django with python, & bulma
 
 <strong><u>Progress:</u></strong>
 <pre>
+10/5/21 meeting: front end designs, review pitch deck (Teams repo), logo ideas
+10/5/21 frontend designs uploaded by Muqueeth
 9/28/21 skills checkbox -Darence
 9/27/21 view profile -Darence
 9/25/21 profile form added, working on link -Darence
