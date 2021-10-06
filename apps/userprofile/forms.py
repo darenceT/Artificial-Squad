@@ -1,10 +1,10 @@
 from django import forms
 
-from .models import Profile
+from .models import User_profile
 
 class Profile_form(forms.ModelForm):
 	class Meta:
-		model = Profile
+		model = User_profile
 		fields = ('full_name', 'relevant_background', 'values', 'career_goals')
 	product_management = forms.BooleanField(required=False)
 	web_developement = forms.BooleanField(required=False)

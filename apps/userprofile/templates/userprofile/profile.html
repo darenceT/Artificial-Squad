@@ -6,11 +6,11 @@
         <h1 class="title">Your Profile</h1><br> 
         <p> Our Ai machine will use your profile along with your resume to find the jobs that you want.</p><br>
         
-            <p>Full name: {{ profile.full_name }}</p><br>
+            <p>Full name: {{ userprofile.full_name }}</p><br>
             
-            <p>Relevant background: {{ profile.relevant_background }}</p><br>
-            <p>Values: {{ profile.values }}</p><br>
-            <p>Career Goals: {{ profile.career_goals }}</p><br>
+            <p>Relevant background: {{ userprofile.relevant_background }}</p><br>
+            <p>Values: {{ userprofile.values }}</p><br>
+            <p>Career Goals: {{ userprofile.career_goals }}</p><br>
 
             <p><a href="{% url 'profile_create' %}">Edit profile[not done]</a><hr>
 
