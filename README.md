@@ -4,9 +4,11 @@ from Testoper
 
 Project name: Jibe
 
-Team: Micky, Corretta, Darence, Muqueeth
+Team: Micky, Coretta, Darence, Muqueeth
+
 
 Frontend: html, css, bulma, Figma
+
 Backend: python & django 
 
 Progress:
