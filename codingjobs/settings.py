@@ -134,6 +134,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'codingjobs')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'resume')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_URL = '/resume/'      # /dashboard/resume/
+MEDIA_URL = '/media/'      # /dashboard/media/
