@@ -4,7 +4,10 @@ from Testoper
 
 Project name: <strong>Jibe</strong>
 
-Django with python, & bulma 
+Team: Micky, Corretta, Darence, Muqueeth
+
+Frontend: html, css, bulma, Figma
+Backend: python & django 
 
 <strong><u>Progress:</u></strong>
 <pre>
