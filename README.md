@@ -12,7 +12,7 @@ Backend: python & django
 
 Progress:
 <pre>
-10/6/21 Fixed problem with multiple profiles - Darence
+10/6/21 Fixed problem with multiple profiles, checkboxes functional - Darence
 10/5/21 meeting: front end designs, review pitch deck (Teams repo), logo ideas
 10/5/21 frontend designs uploaded by Muqueeth
 9/28/21 skills checkbox -Darence
