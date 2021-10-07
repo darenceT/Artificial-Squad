@@ -7,8 +7,21 @@
         <p> Our Ai machine will use your profile along with your resume to find the jobs that you want.</p><br>
         
             <p>Full name: {{ userprofile.full_name }}</p><br>
-            
             <p>Relevant background: {{ userprofile.relevant_background }}</p><br>
+            <p>Skills:</p> 
+            {% if userprofile.product_management %}
+                <p>Product Management</p>
+            {% endif %} 
+            {% if userprofile.web_development %}    <!-- does not show up? -->
+                <p>Web development</p>
+            {% endif %} 
+            {% if userprofile.marketing %}
+                <p>Marketing</p>
+            {% endif %} 
+            {% if userprofile.finance %}
+                <p>Finance</p>      
+            {% endif %} 
+            <br>
             <p>Values: {{ userprofile.values }}</p><br>
             <p>Career Goals: {{ userprofile.career_goals }}</p><br>
 
