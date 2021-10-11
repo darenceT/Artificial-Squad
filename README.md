@@ -1,8 +1,8 @@
 # Artificial Squad
 from Testoper
-- This is a forked copy. Original copy held privately at github.com/testoper-Community
+- This is a copy. Original copy held privately at github.com/testoper-Community<br>
 
-Project name: Jibe
+<h2>Project name:<strong>Jibe</strong></h2>
 
 <p>Team:</p>
 <p>Micky - product manager, business</p>
