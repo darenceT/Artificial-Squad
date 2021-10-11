@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+<!-- similar to "view application" but will have edit feature -->
+
+{% block content %}
+    <div class="column is-offset-3">    
+        <h1 class="title">Your Profile</h1><br> 
+        <p> Our Ai machine will use your profile along with your resume to find the jobs that you want.</p><br>
+        
+            <p>Full name: {{ userprofile.full_name }}</p><br>
+            <p>Relevant background: {{ userprofile.relevant_background }}</p><br>
+            <p>Skills:</p> 
+            {% if userprofile.product_management %}
+                <p>Product Management</p>
+            {% endif %} 
+            {% if userprofile.web_development %}    <!-- does not show up? -->
+                <p>Web development</p>
+            {% endif %} 
+            {% if userprofile.marketing %}
+                <p>Marketing</p>
+            {% endif %} 
+            {% if userprofile.finance %}
+                <p>Finance</p>      
+            {% endif %} 
+            <br>
+            <p>Values: {{ userprofile.values }}</p><br>
+            <p>Career Goals: {{ userprofile.career_goals }}</p><br>
+
+            <p><a href="{% url 'profile_create' %}">Edit profile[not done]</a><hr>
+
+            <p><a href="{% url 'profile_create' %}">Create your profile[will not be shown unless above empty]</a></p>
+        
+    </div>
+{% endblock %}

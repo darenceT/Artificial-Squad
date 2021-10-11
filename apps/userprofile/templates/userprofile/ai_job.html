@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+
+
+
+{% block content %}
+
+<h2 class="subtitle has-text-centered"><strong>Your AI-powered job picks!</strong></h2><br>
+	<div class="column is-offset-3">
+		<div class="columns">
+			{% for job in jobs %}
+				<div class="colum is-4">
+					<div class="card">
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">{{ job.title }}</p>
+									<p class="subtitle is-6">{{ job.created_at }}</p>
+								</div>
+							</div>
+
+							<div class="content">
+								{{ job.location }}
+
+								<br>
+
+								<a href="{% url 'job_detail' job.id %}">View</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

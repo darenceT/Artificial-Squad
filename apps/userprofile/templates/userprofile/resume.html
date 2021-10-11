@@ -1,0 +1,16 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+    <div class="column is-offset-3">    
+        <h1 class="title">Resume</h1><br> 
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="resume">
+            <button type="submit">Upload</button>
+        </form>
+        {% if url %}
+            <p>Uploaded file: <a href="/dashboard/resume/{{ name }}">{{ name }}</a></p> <!--FIXME link code not clean-->
+            <p>{{ upload_time }}</p>    
+        {% endif %}
+    </div>
+{% endblock %}

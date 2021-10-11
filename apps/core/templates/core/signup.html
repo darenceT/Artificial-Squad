@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+
+
+
+{% block content %}
+
+	<div class="container">
+		<div class="columns">
+			<div class="column is-6 is-offset-3">
+				<h1 class="title">Step 1 to your dream job!</h1>
+				<hr>
+				<form method="post" action=".">
+					{% csrf_token %}
+
+					{{ form.as_p }}
+
+					<br>
+
+					<div class="field">
+						<label>Account type</label>
+
+						<div class="control">
+							<div class="select">
+								<select name="account_type">
+									<option value="jobseeker" selected>Job seeker</option>
+									<option value="employer">Employer</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="control">
+							<button class="button is-warning"><strong>Sign up</button></strong>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}

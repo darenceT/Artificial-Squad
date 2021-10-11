@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+	<div class="column is-offset-3">
+		<h1 class="title">{{ user }}'s Dashboard</h1>
+		<br>
+		{% if userprofile.is_employer %} 						
+
+		<!-- Employer/Recruiter view -->
+			<h2 class="subtitle"><strong>Current applicants:</strong></h2>
+			<p>No applicants yet.</p><br>
+			<a href="http://www.google.com">Browse job seekers here</a><br/><br/>
+
+			<h2 class="subtitle"><strong>Your job postings:</strong></h2>
+			{% for job in request.user.jobs.all %}
+				<div class="job">
+					{{ job.title }}
+				</div>
+			{% empty %}
+				<p>You don't have any jobs, post one today!</p>
+			{% endfor %}<br>
+			<a href="{% url 'add_job' %}">Post new jobs</a>
+		{% else %}	
+
+		<!-- Jobseeker view -->
+
+			<p><a href="{% url 'profile' %}">Profile</a></p>
+			<p><a href="{% url 'resume' %}">Resume</a></p><br/>
+
+			<h2 class="subtitle">Your current applications:</h2>
+
+			{% for application in request.user.applications.all %}
+				<div class="application">
+					<a href="{% url 'view_application' application.id %}">{{ application.job.title }}</a>
+				</div>
+			{% empty %}
+				<p>Start applying for jobs today. Let Jibe find your dream job!</p>
+			{% endfor %}<br>
+
+			<!-- AI jobs -->
+			<a href="{% url 'ai_job' %}"><strong>Your AI-powered job reccomendations</strong></a><br>
+			<a href="{% url 'ai_jobs' %}">Real AI jobs under construction</a>	
+		{% endif %}
+	</div>
+{% endblock %}

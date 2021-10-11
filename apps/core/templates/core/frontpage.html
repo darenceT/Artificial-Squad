@@ -1,0 +1,44 @@
+{% extends 'core/base.html' %}
+
+
+
+{% block content %}
+
+	<div class="column is-6 is-offset-3">
+		<h1 class="title is-3 has-text-centered has-text-info">Start your Jibe Today</h1>
+		<h1 class="title is-4 has-text-centered has-text-primary">Use AI technology to find your dream job!</h1><br>
+		<p>How? It's 3 simple steps and it's free!</p><br>
+		<p><strong>Step 1: </strong>Complete your profile of job preferences</p><br>
+		<p><strong>Step 2: </strong>Upload your resume</p><br>
+		<p><i>&nbsp; Our AI machine scans your profile and your resume and matches our database of available jobs</i></p><br>
+		<p><strong>Step 3: </strong>Browse your personalized job recomendations, and hit apply!</p>
+	</div>
+
+	<hr>
+	<h2 class="subtitle has-text-centered"><strong>Newest Jobs</strong></h2>
+
+	<div class="columns">
+		{% for job in jobs %}
+			<div class="colum is-4">
+				<div class="card">
+					<div class="card-content">
+						<div class="media">
+							<div class="media-content">
+								<p class="title is-4">{{ job.title }}</p>
+								<p class="subtitle is-6">{{ job.created_at }}</p>
+							</div>
+						</div>
+
+						<div class="content">
+							{{ job.location }}
+
+							<br>
+
+							<a href="{% url 'job_detail' job.id %}">View</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}
