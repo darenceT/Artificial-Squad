@@ -1,14 +1,17 @@
 # Artificial Squad
-
 from Testoper
+- This is a forked copy. Original copy held privately at github.com/testoper-Community
 
 Project name: Jibe
 
-Team: Micky, Coretta, Darence, Muqueeth
+<p>Team:</p>
+<p>Micky - product manager, business</p>
+<p>Coretta - concept development, testing</p>
+<p>Darence - software developer</p>
+<p>Muqueeth - UI, business</p><br>
 
-Frontend: html, css, bulma, figma
-
-Backend: python & django 
+<p>Frontend: html, css, bulma, figma</p>
+<p>Backend: python & django</p>
 
 Progress:
 <pre>
