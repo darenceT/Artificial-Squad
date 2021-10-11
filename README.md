@@ -2,9 +2,9 @@
 from Testoper
 - This is a copy. Original copy held privately at github.com/testoper-Community<br>
 
-<h2>Project name:<strong>Jibe</strong></h2>
+<h2>Project name: Jibe</h2>
 
-<p>Team:</p>
+<p><strong>Team:</strong></p>
 <p>Micky - product manager, business</p>
 <p>Coretta - concept development, testing</p>
 <p>Darence - software developer</p>
