@@ -3,7 +3,6 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.core.files.storage import FileSystemStorage
 
 from apps.job.models import Application, Job
-from .models import User_profile
 from .forms import Profile_form
 
 @login_required
@@ -27,7 +26,6 @@ def ai_job(request):
 
 @login_required
 def profile(request):
-    # profile = get_object_or_404(Profile)
     return render(request, 'userprofile/profile.html', {'userprofile':  request.user.userprofile})
 
 
@@ -44,7 +42,7 @@ def profile_create(request):
 
     return render(request, 'userprofile/profile_create.html', {'form': form})
 
-@login_required  # FIXME test, is this necessary?
+@login_required
 def resume(request):
     context = {}
     if request.method == 'POST':

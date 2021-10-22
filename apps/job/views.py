@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
 from .forms import Add_job_form, Application_form
-from .models import Job, Application
+from .models import Job
 
 def job_detail(request, job_id):
 	job = Job.objects.get(pk=job_id)

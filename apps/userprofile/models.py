@@ -8,7 +8,7 @@ class User_profile(models.Model):
 	full_name = models.CharField(max_length=255, default='Enter full name')
 	relevant_background = models.TextField()
 	product_management = models.BooleanField(default=False)
-	web_developement = models.BooleanField(default=False)
+	web_development = models.BooleanField(default=False)
 	user_experience = models.BooleanField(default=False)
 	marketing = models.BooleanField(default=False)
 	finance = models.BooleanField(default=False)

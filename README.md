@@ -12,6 +12,11 @@ Backend: python & django
 
 Progress:
 <pre>
+11/5/21 present
+11/2/21 practice run through
+10/26/21 next meeting: final review of pitch deck
+10/19/21 meeting: review pitch deck, sales and marketing
+10/12/21 meeting: review pitch deck, logo. Ground work coding for AI-MVP -Darence
 10/6/21 Fixed problem with multiple profiles, checkboxes functional - Darence
 10/5/21 meeting: front end designs, review pitch deck (Teams repo), logo ideas
 10/5/21 frontend designs uploaded by Muqueeth

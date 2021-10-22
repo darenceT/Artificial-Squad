@@ -3,6 +3,32 @@
 
 
 {% block content %}
-	<h1 class="title">AI jobs under construction</h1>
+	<h2 class="subtitle has-text-centered"><strong>AI jobs in construction</strong></h2><br>
+	<div class="column is-offset-3">
+		<div class="columns">
+			{% for job_identifier, job in ai_jobs.items %}
+				<div class="colum is-4">
+					<div class="card">
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">{{ job.title }}</p>
+									<p class="subtitle is-6">{{ job.created_at }}</p>
+								</div>
+							</div>
+
+							<div class="content">
+								{{ job.location }}
+
+								<br>
+
+								<a href="{% url 'job_detail' job.id %}">View</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 
 {% endblock %}

@@ -6,6 +6,11 @@ class Job(models.Model):
 	location = models.CharField(max_length=255, blank=True, null=True)
 	description = models.TextField()
 	requirements = models.TextField(blank=True, null=True)
+	product_management = models.BooleanField(default=False)
+	web_development = models.BooleanField(default=False)
+	user_experience = models.BooleanField(default=False)
+	marketing = models.BooleanField(default=False)
+	finance = models.BooleanField(default=False)
 
 	created_by = models.ForeignKey(User, related_name='jobs', on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True)
