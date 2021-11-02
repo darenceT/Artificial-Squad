@@ -1,6 +1,6 @@
 # Artificial Squad
 
-from Testoper
+This is a copy. Original repo held privately at https://github.com/testoper-Community
 
 Project name: Jibe
 
