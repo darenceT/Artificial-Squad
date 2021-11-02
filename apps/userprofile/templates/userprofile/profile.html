@@ -4,10 +4,11 @@
 {% block content %}
     <div class="column is-offset-3">    
         <h1 class="title">Your Profile</h1><br> 
-        <p> Our Ai machine will use your profile along with your resume to find the jobs that you want.</p><br>
-        
-            <p>Full name: {{ userprofile.full_name }}</p><br>
-            <p>Relevant background: {{ userprofile.relevant_background }}</p><br>
+        <p> Our AI technology will use your profile & resume to find your dream jobs today!</p><br>
+        <hr>
+            <p><strong>{{ userprofile.full_name }}</strong></p><br>
+            <p>Background:<p>
+            <p>{{ userprofile.relevant_background }}</p><br>
             <p>Skills:</p> 
             {% if userprofile.product_management %}
                 <p>Product Management</p>
@@ -22,12 +23,14 @@
                 <p>Finance</p>      
             {% endif %} 
             <br>
-            <p>Values: {{ userprofile.values }}</p><br>
-            <p>Career Goals: {{ userprofile.career_goals }}</p><br>
+            <p>Values:</p>
+            <p>{{ userprofile.values }}</p><br>
+            <p>Career Goals:</p>
+            <p>{{ userprofile.career_goals }}</p><br>
 
-            <p><a href="{% url 'profile_create' %}">Edit profile[not done]</a><hr>
+            <p><a href="{% url 'profile_create' %}">Edit profile</a><hr>
 
-            <p><a href="{% url 'profile_create' %}">Create your profile[will not be shown unless above empty]</a></p>
+            <!-- <p><a href="{% url 'profile_create' %}">Create your profile</a></p> -->
         
     </div>
 {% endblock %}

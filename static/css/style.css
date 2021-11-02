@@ -1,0 +1,68 @@
+/* FIXME background not working, added background to html/body */
+* {
+    box-sizing: border-box;
+}
+    
+ .container {
+    min-height:100%;
+    position:auto;
+ }
+ header {                  
+    background:white;
+    padding:0px;
+ }
+ html, body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    position:auto;
+    padding:0px;
+    background:#f2fdfd;
+    height:100%;
+    padding-bottom:60px;  /* Height of the footer */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* box-sizing: border-box; */
+ }
+ footer {
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:80px;   /* Height of the footer */
+    padding: 10px;
+    background:#ece6dc;
+ }
+.frontpage {
+   background-image: url('/static/img/frontpage2.jfif');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: scroll;
+   background-size: 90%;
+   background-size: 3.2em;
+   background-size: 30px;
+   background-size: 80%;
+   /* width: 1200px; */
+   height: 500px;
+   padding: 0px;
+   margin: 0px;
+   /* align-content: center; */
+   /* border: 5px solid green; */
+   max-width:100%;
+}
+/* .logo {
+   height: 20px;
+} */
+#logo {
+   border-radius:50%;
+   width: 70px;
+   height: 120px;
+   image-rendering: pixelated;
+}
+.title1 {
+   font-size: 40px;
+   text-shadow: 2px 2px black;
+}
+.fpjoin {
+   position: relative;
+   right: -450px;
+}

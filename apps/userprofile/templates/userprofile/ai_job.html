@@ -18,13 +18,8 @@
 								</div>
 							</div>
 
-							<div class="content">
-								{{ job.location }}
-
-								<br>
-
-								<a href="{% url 'job_detail' job.id %}">View</a>
-							</div>
+							<div class="content">{{ job.location }}</div><br>
+							<p><a href="{% url 'job_detail' job.id %}">View</a></p>
 						</div>
 					</div>
 				</div>

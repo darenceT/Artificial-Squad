@@ -1,20 +1,23 @@
 # Artificial Squad
+
 from Testoper
-- This is a copy. Original copy held privately at github.com/testoper-Community<br>
 
-<h2>Project name: Jibe</h2>
+Project name: Jibe
 
-<p><strong>Team:</strong></p>
-<p>Micky - product manager, business</p>
-<p>Coretta - concept development, testing</p>
-<p>Darence - software developer</p>
-<p>Muqueeth - UI, business</p><br>
+Team: Micky, Coretta, Darence, Muqueeth
 
-<p>Frontend: html, css, bulma, figma</p>
-<p>Backend: python & django</p>
+Frontend: html, css, bulma, figma
+
+Backend: python & django 
 
 Progress:
 <pre>
+11/5/21 Live pitch deck & demo
+11/2/21 practice run through
+11/1/21 css -Darence
+10/26/21 meeting: final review of pitch deck
+10/19/21 meeting: review pitch deck, sales and marketing
+10/12/21 meeting: review pitch deck, logo. Ground work coding for AI-MVP -Darence
 10/6/21 Fixed problem with multiple profiles, checkboxes functional - Darence
 10/5/21 meeting: front end designs, review pitch deck (Teams repo), logo ideas
 10/5/21 frontend designs uploaded by Muqueeth
