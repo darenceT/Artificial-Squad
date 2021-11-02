@@ -4,7 +4,7 @@ from Testoper
 
 Project name: Jibe
 
-Team: Micky, Coretta, Darence, Muqueeth
+Team: Micky, Darence, Coretta, Muqueeth
 
 Frontend: html, css, bulma, figma
 
