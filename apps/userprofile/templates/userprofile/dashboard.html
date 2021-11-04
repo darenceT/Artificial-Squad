@@ -2,7 +2,7 @@
 
 {% block content %}
 	<div class="column is-offset-3">
-		<h1 class="title">{{ user }}'s Dashboard</h1>
+		<h1 class="title">{{ user }}'s dashboard</h1>
 		<br>
 		{% if userprofile.is_employer %} 						
 
@@ -27,19 +27,20 @@
 			<p><a href="{% url 'profile' %}">Profile</a></p>
 			<p><a href="{% url 'resume' %}">Resume</a></p><br/>
 
-			<h2 class="subtitle">Your current applications:</h2>
+			<p>Your current applications:</p>
 
 			{% for application in request.user.applications.all %}
 				<div class="application">
 					<a href="{% url 'view_application' application.id %}">{{ application.job.title }}</a>
 				</div>
 			{% empty %}
-				<p>Start applying for jobs today. Let Jibe find your dream job!</p>
+				<p>&nbsp;&nbsp;&nbsp;0 Jobs applied. Start applying today!</p>
 			{% endfor %}<br>
 
 			<!-- AI jobs -->
-			<a href="{% url 'ai_job' %}"><strong>You have 2 Jibe job matches!</strong></a><br>
+			<p><a href="{% url 'ai_job' %}"><strong>You have 2 Jibe job matches!</strong></a></p><br>
 			<!-- <a href="{% url 'ai_jobs' %}">Real AI jobs under construction</a>	 -->
+			<a href="{% url 'browse_jobs' %}">Browse other jobs</a>
 		{% endif %}
 	</div>
 {% endblock %}

@@ -1,5 +1,4 @@
 {% extends 'core/base.html' %}
-<!-- similar to "view application" but will have edit feature -->
 
 {% block content %}
     <div class="column is-offset-3">    
@@ -13,7 +12,7 @@
             {% if userprofile.product_management %}
                 <p>Product Management</p>
             {% endif %} 
-            {% if userprofile.web_development %}    <!-- does not show up? -->
+            {% if userprofile.web_development %}    
                 <p>Web development</p>
             {% endif %} 
             {% if userprofile.marketing %}
@@ -26,11 +25,11 @@
             <p>Values:</p>
             <p>{{ userprofile.values }}</p><br>
             <p>Career Goals:</p>
-            <p>{{ userprofile.career_goals }}</p><br>
+            <p>{{ userprofile.career_goals }}</p><br><hr>
 
-            <p><a href="{% url 'profile_create' %}">Edit profile</a><hr>
+            <p><a href="{% url 'profile_create' %}">Edit profile (coming soon)</a>
 
-            <!-- <p><a href="{% url 'profile_create' %}">Create your profile</a></p> -->
+
         
     </div>
 {% endblock %}

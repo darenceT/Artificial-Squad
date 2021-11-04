@@ -1,4 +1,3 @@
-/* FIXME background not working, added background to html/body */
 * {
     box-sizing: border-box;
 }
@@ -18,19 +17,22 @@
     padding:0px;
     background:#f2fdfd;
     height:100%;
-    padding-bottom:60px;  /* Height of the footer */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* box-sizing: border-box; */
+   padding-bottom:75px;  /* Height of the footer */
  }
  footer {
-    position:absolute;
+    position:relative;
     bottom:0px;
     width:100%;
-    height:80px;   /* Height of the footer */
-    padding: 10px;
-    background:#ece6dc;
+    height:100px;   
+    padding: 20px;
+    background:#d1971a;
+ }
+ a {
+    color: rgb(60, 60, 61);
+    text-decoration: underline;
+ }
+ a:hover {
+    color: rgb(52, 161, 107);
  }
 .frontpage {
    background-image: url('/static/img/frontpage2.jfif');
@@ -41,17 +43,11 @@
    background-size: 3.2em;
    background-size: 30px;
    background-size: 80%;
-   /* width: 1200px; */
    height: 500px;
    padding: 0px;
    margin: 0px;
-   /* align-content: center; */
-   /* border: 5px solid green; */
    max-width:100%;
 }
-/* .logo {
-   height: 20px;
-} */
 #logo {
    border-radius:50%;
    width: 70px;
@@ -65,4 +61,15 @@
 .fpjoin {
    position: relative;
    right: -450px;
+}
+.fpinfo {
+   background-image: url('/static/img/frontpage_info.bmp');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: scroll;
+   background-size: 40px;
+   background-size: 55%;
+   height: 400px;
+   padding: 0px;
+   margin: 0px;
 }

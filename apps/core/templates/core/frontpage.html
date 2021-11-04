@@ -8,33 +8,7 @@
 		<h1 class="title1 has-text-centered has-text-white is-family-monospace"><br><br>Intelligent Job Search</h1><br>
 		<h2 class="fpjoin buttons">
 		<a href="{% url 'signup' %}" class="button"><strong>Find your dream job today!</strong></a></h2>
-</div>
+</div><br><br><br>
 
-	<hr>
-	<!-- <h2 class="subtitle has-text-centered"><strong>Newest Jobs</strong></h2>
-
-	<div class="columns">
-		{% for job in jobs %}
-			<div class="colum is-4">
-				<div class="card">
-					<div class="card-content">
-						<div class="media">
-							<div class="media-content">
-								<p class="title is-4">{{ job.title }}</p>
-								<p class="subtitle is-6">{{ job.created_at }}</p>
-							</div>
-						</div>
-
-						<div class="content">
-							{{ job.location }}
-
-							<br>
-
-							<a href="{% url 'job_detail' job.id %}">View</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		{% endfor %} -->
-	</div>
+<h2 class="fpinfo buttons"></h2>
 {% endblock %}

@@ -20,9 +20,12 @@ def view_application(request, application_id):
 
 
 def ai_job(request):
-    jobs = Job.objects.all()[0:3]
+    jobs = Job.objects.all()[0:2]
     return render(request, 'userprofile/ai_job.html', {'jobs': jobs})
 
+def browse_jobs(request):
+    jobs = Job.objects.all()[2:]
+    return render(request, 'userprofile/browse_jobs.html', {'jobs': jobs})
 
 @login_required
 def profile(request):

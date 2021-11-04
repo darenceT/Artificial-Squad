@@ -30,15 +30,15 @@
 			</div>
 			<div class="navbar-end">
 				{% if request.user.is_authenticated %}
-					<a href="{% url 'dashboard' %}" class="navbar-item">{{ user }}'s Dashboard</a>
+					<a href="{% url 'dashboard' %}" class="navbar-item">{{ user }}'s dashboard</a>
 				{% endif %}
 				<div class="navbar-item">
 					<div class="buttons">
 						{% if request.user.is_authenticated %}
-							<a href="{% url 'logout' %}" class="button is-light">LOGOUT</a>
+							<a href="{% url 'logout' %}" class="button is-light">logout</a>
 						{% else %}
-							<a href="{% url 'signup' %}" class="button is-blue"><strong>SIGNUP</strong></a>
-							<a href="{% url 'login' %}" class="button is-grey-light">LOGIN</a>
+							<a href="{% url 'signup' %}" class="button is-blue"><strong>signup</strong></a>
+							<a href="{% url 'login' %}" class="button is-grey-light">login</a>
 						{% endif %}
 					</div>
 				</div>
@@ -61,7 +61,9 @@
  	<footer>
 		<div class="content has-text-centered">
 			<h2>
+				<div id="footer">
 				<a href="{% url 'about' %}">about us</a>&nbsp;|&nbsp;<a href="{% url 'resources' %}">resources</a>&nbsp;|&nbsp;<a href="{% url 'careers' %}">careers</a>
+				</div>
 			</h2>
 			<p><strong>Jibe</strong> by Artificial Squad (Testoper)</p>
 		</div>

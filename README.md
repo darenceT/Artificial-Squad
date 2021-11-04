@@ -4,7 +4,7 @@ This is a copy. Original repo held privately at https://github.com/testoper-Comm
 
 Project name: Jibe
 
-Team: Micky, Darence, Coretta, Muqueeth
+Team: Micky, Coretta, Darence, Muqueeth
 
 Frontend: html, css, bulma, figma
 
@@ -13,6 +13,7 @@ Backend: python & django
 Progress:
 <pre>
 11/5/21 Live pitch deck & demo
+11/4/21 Frontend final changes for demo -Darence
 11/2/21 practice run through
 11/1/21 css -Darence
 10/26/21 meeting: final review of pitch deck

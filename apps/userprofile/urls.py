@@ -8,6 +8,7 @@ urlpatterns = [
 	path('', dashboard, name='dashboard'),
 	path('application/<int:application_id>/', view_application, name='view_application'),
 	path('ai_job/', ai_job, name='ai_job'),
+	path('browse_jobs/', browse_jobs, name='browse_jobs'),
 	path('profile/', profile, name='profile'),
 	path('profile_create/', profile_create, name='profile_create'),
 	path('resume/', resume, name='resume'),
