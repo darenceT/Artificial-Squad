@@ -4,7 +4,7 @@ This is a copy. Original repo held privately at https://github.com/testoper-Comm
 
 Project name: Jibe
 
-Team: Micky, Coretta, Darence, Muqueeth
+Team: Micky, Darence, Coretta, Muqueeth
 
 Frontend: html, css, bulma, figma
 
